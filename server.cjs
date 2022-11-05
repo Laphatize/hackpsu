@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const { Configuration, OpenAIApi } = require("openai")
 
 // respond with "hello world" when a GET request is made to the homepage
 
@@ -7,6 +8,7 @@ const app = express()
 app.get('/', (req, res) => {
   res.send('hello world')
 })
+
 
 
 
